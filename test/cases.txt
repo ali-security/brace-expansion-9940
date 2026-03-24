@@ -187,3 +187,4 @@ y{},a}x
 {}a,b}c
 # make sure brackets work #87
 src/{\[ui\],abc}/*.ts
+{1..2..0}

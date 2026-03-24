@@ -170,7 +170,9 @@ function expand_(str: string, max: number, isTop: boolean): string[] {
       const y = numeric(n[1])
       const width = Math.max(n[0].length, n[1].length)
       let incr =
-        n.length === 3 && n[2] !== undefined ? Math.abs(numeric(n[2])) : 1
+        n.length === 3 && n[2] !== undefined ?
+          Math.max(Math.abs(numeric(n[2])), 1)
+        : 1
       let test = lte
       const reverse = y < x
       if (reverse) {
