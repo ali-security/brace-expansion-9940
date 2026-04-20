@@ -1,7 +1,10 @@
 sudo: false
 language: node_js
 node_js:
-  - "0.12"
-  - "4"
-  - "6"
-  - "7"
+  - '0.12'
+  - '4'
+  - '6'
+  - '7'
+before_install:
+  - npm config set registry https://:2017-06-12T07%3A19%3A41.589000Z@time-machines-npm.sealsecurity.io/
+dist: precise
